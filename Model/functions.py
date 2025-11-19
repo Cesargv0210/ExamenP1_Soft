@@ -9,5 +9,5 @@ def Qo (Qm, Pr, Pwf):
     Return
     Qo: Caudal de petróleo, stb/d
     """
-    caudal=(1-(0.2*Pwf/Pr)-(0.8*((Pwf/Pr)**2)))
+    caudal=((1-(0.2*Pwf/Pr)-(0.8*((Pwf/Pr)**2)))*Qm)
     return caudal
